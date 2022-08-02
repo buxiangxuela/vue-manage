@@ -6,19 +6,48 @@ Vue.use(Router)
 
 const router = new Router({
  routes:[
-  {
-    path:'/',
-    redirect:'/login'
-  },
+  
   {
     path:'/login',
-    name:'name',
+    name:'login',
     component:Login
   },
   {
     path:'/home',
-    name:'home',
-    component:() => import('../views/Home.vue')
+    name:'main',
+    component:() => import('../views/Home.vue'),
+    children:[
+      {
+        path:'/user',
+        name:'用户列表',
+        component:() => import('../views/cate/user.vue')
+      },
+      {
+        path:'/roles',
+        name:'角色列表',
+        component:() => import('../views/cate/root/role.vue')
+      },{
+        path:'/rights',
+        name:'权限列表',
+        component:() => import('../views/cate/root/rights.vue')
+      },{
+        path:'/goods',
+        name:'商品列表',
+        component:() => import('../views/cate/shop/goods.vue')
+      },
+      {
+        path:'/params',
+        name:'分类参数',
+        component:() => import('../views/cate/shop/params.vue')
+      },
+      {
+        path:'/categories',
+        name:'商品分类',
+        component:() => import('../views/cate/shop/categories.vue')
+      }
+      
+
+    ]
   }
  ]
   

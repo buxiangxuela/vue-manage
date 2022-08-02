@@ -90,7 +90,7 @@ export default {
     border-radius: 15px;
     width: 370px;
     height: 200px;
-    padding: 30px 15px;
+    padding: 30px 10px;
     background-color: #fff;
     position: absolute;
     left: 50%;
