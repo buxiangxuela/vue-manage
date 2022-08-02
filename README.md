@@ -37,4 +37,4 @@
             window.sessionStorage.clear();
             //路由跳转
             this.$router.push("/login");
-上传git  git init //git checkout -b login //git commit -m "登录功能"//git push -u origin login//git push -u origin master//git checkout master //git merge login //git branch -d login
+上传git  git init //git checkout -b login //git add . //git commit -m "登录功能"//git push -u origin login//git push -u origin master//git checkout master //git merge login //git branch -d login
