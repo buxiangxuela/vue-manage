@@ -3,4 +3,37 @@ html,body,#app{
     height: 100%;
     margin: 0;
     padding: 0;
+    /* 添加最小宽度保证缩小不变形 */
+    min-width: 1366px;
+}
+
+.el-breadcrumb{
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+.el-card{
+    box-shadow: 0 0 1px rgba(0,0, 0, 0.45);
+
+}
+
+.el-table{
+    /* 让搜索框和列表有间隔 */
+    margin-top: 15px;
+    font-size: 12px;
+
+   
+}
+
+.el-pagination{
+    margin-top: 15px;
+}
+
+.el-tag{
+    margin: 5px 5px;
+}
+
+/* 放置下选框 占满屏幕 */
+.el-cascader-menu{
+    height: 200px;
 }
