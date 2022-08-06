@@ -324,8 +324,8 @@ export default {
                         mobile: this.editorForm.mobile,
                         email: this.editorForm.email
                     })
-                console.log(res.meta.status)
-                if (res.meta.status != 200) { return this.$message.err('修改用户失败！') }
+                /* console.log(res.meta.status) */
+                if (res.meta.status != 200) { return this.$message.error('修改用户失败！') }
                 this.$message.success('修改用户成功')
                 //隐藏对话框
                 this.showVisible = false

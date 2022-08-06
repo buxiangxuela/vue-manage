@@ -10,7 +10,7 @@
                 添加角色
             </el-button>
             <!-- 添加角色对话框 -->
-<<<<<<< HEAD
+
             <el-dialog title="添加用户" :visible.sync="roleVisible" width="30%" @close="resetAddForm()"
                 :close-on-click-modal="false">
                 <!-- 添加用户 -->
@@ -27,9 +27,7 @@
                     <el-button type="primary" @click="addRole">确定</el-button>
                 </span>
             </el-dialog>
-=======
 
->>>>>>> cat
 
             <el-table :data="roleList" border stripe>
                 <!-- 展开查看二级三级权限 -->
@@ -108,7 +106,7 @@
                                 @click="showSetDialog(scope.row)">权限分配
                             </el-button>
                         </el-tooltip>
-<<<<<<< HEAD
+
                         <el-dialog title="权限分配" :visible.sync="showSetVisible" width="50%" :modal-append-to-body="false"
                             :close-on-click-modal="false" @close="resetSetForm()" @keyup.enter.native="allotRight">
                             <el-tree :data="rightList" :props="treeProps" node-key="id" default-expand-all
@@ -122,11 +120,8 @@
                     </template>
                 </el-table-column>
             </el-table>
-=======
 
-                    </template>
-                </el-table-column>
-            </el-table>
+
             <el-dialog title="添加用户" :visible.sync="roleVisible" width="30%" @close="resetAddForm()"
                 :close-on-click-modal="false">
                 <!-- 添加用户 -->
@@ -143,6 +138,7 @@
                     <el-button type="primary" @click="addRole">确定</el-button>
                 </span>
             </el-dialog>
+
             <el-dialog title="权限分配" :visible.sync="showSetVisible" width="50%" :modal-append-to-body="false"
                 :close-on-click-modal="false" @close="resetSetForm()" @keyup.enter.native="allotRight">
                 <el-tree :data="rightList" :props="treeProps" node-key="id" default-expand-all
@@ -153,18 +149,19 @@
                     <el-button type="primary" @click="allotRight">确定</el-button>
                 </span>
             </el-dialog>
->>>>>>> cat
+
         </el-card>
     </div>
 </template>
+
 <style lang="less" scoped>
 /* 显示上边框 */
-<<<<<<< HEAD
-=======
-.el-tag{
+
+
+.el-tag {
     margin: 20px 5px;
 }
->>>>>>> cat
+
 .bttop {
     border-top: 1px solid #eee;
 }
@@ -356,25 +353,25 @@ export default {
             });
         },
         //确定 编辑并上传
-<<<<<<< HEAD
-       async allotRight() {
+
+        async allotRight() {
             //展开 运算符
-          const keys = [
-            ...this.$refs.treeRef.
-            getCheckedKeys(),
-            ...this.$refs.treeRef.
-            getHalfCheckedKeys()
-            
-            ]  
+            const keys = [
+                ...this.$refs.treeRef.
+                    getCheckedKeys(),
+                ...this.$refs.treeRef.
+                    getHalfCheckedKeys()
+
+            ]
             /* console.log(keys) */
             const idStr = keys.join(',')
 
-         const{data:res} = await  this.$http.post(`roles/${this.roleId}/rights`,{rids:idStr})
-         if(res.meta.status !== 200) return this.$message.error('分配权限状态失败！')
-         this.getRoleList()
-         this.showSetVisible = false
-}
-=======
+            const { data: res } = await this.$http.post(`roles/${this.roleId}/rights`, { rids: idStr })
+            if (res.meta.status !== 200) return this.$message.error('分配权限状态失败！')
+            this.getRoleList()
+            this.showSetVisible = false
+        },
+
         async allotRight() {
             //展开 运算符
             const keys = [
@@ -392,7 +389,7 @@ export default {
             this.getRoleList()
             this.showSetVisible = false
         }
->>>>>>> cat
+
     }
 }
 </script>

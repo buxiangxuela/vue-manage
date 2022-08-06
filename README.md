@@ -38,11 +38,8 @@
             //路由跳转
             this.$router.push("/login");
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 上传git  git init //git checkout -b login //git add . //git commit -m "登录功能"//git push -u origin login//git push -u origin master//git checkout master //git merge login //git branch -d login
 =======
->>>>>>> cat
     上传git  git init //git checkout -b login //git commit -m "登录功能"//git push -u origin login//git push -u origin master//git checkout master //git merge login //git branch -d login
 2 主页布局
     使用到elui的按需中的 el-container el-header ,Aside,Main,Menu,MenuIteMenuItemGroup,Submenu
@@ -69,7 +66,4 @@
 3权限页面
 获取列表数据 type=list
 角色页面
-<<<<<<< HEAD
-=======
 >>>>>>> 83c4178 (权限管理模块)
->>>>>>> cat

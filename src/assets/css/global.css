@@ -14,21 +14,15 @@ html,body,#app{
 
 .el-card{
     box-shadow: 0 0 1px rgba(0,0, 0, 0.45);
-<<<<<<< HEAD
-=======
 
->>>>>>> cat
 }
 
 .el-table{
     /* 让搜索框和列表有间隔 */
     margin-top: 15px;
     font-size: 12px;
-<<<<<<< HEAD
-=======
 
    
->>>>>>> cat
 }
 
 .el-pagination{
@@ -36,10 +30,6 @@ html,body,#app{
 }
 
 .el-tag{
-<<<<<<< HEAD
-    margin: 20px 5px;
-}
-=======
     margin: 5px 5px;
 }
 
@@ -47,4 +37,3 @@ html,body,#app{
 .el-cascader-menu{
     height: 200px;
 }
->>>>>>> cat

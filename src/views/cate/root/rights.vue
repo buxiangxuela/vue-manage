@@ -13,15 +13,9 @@
                 <el-table-column label="权限等级" prop="level">
                     <!-- 通过插槽自定义属性 -->
                     <template slot-scope="scope">
-<<<<<<< HEAD
-                        <el-tag v-if="scope.row.level==='0'">一级</el-tag>
-                        <el-tag v-else-if="scope.row.level==='1'" type="success">二级</el-tag>
-                        <el-tag v-else type="info">三级</el-tag>
-=======
                         <el-tag v-if="scope.row.level==='0'">   一 级   </el-tag>
                         <el-tag v-else-if="scope.row.level==='1'" type="success">   二 级   </el-tag>
                         <el-tag v-else type="info"> 三 级   </el-tag>
->>>>>>> cat
                     </template>
                 </el-table-column>
             </el-table>

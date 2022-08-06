@@ -1,10 +1,6 @@
 import Vue from 'vue'
 import { Button,Form,FormItem,Input,Message,Container,Header,Aside,Main,Menu,MenuItem,MenuItemGroup,Submenu,Breadcrumb,BreadcrumbItem
-<<<<<<< HEAD
-,Card,Row,Col,Table,TableColumn,Switch,Tooltip,Pagination,Dialog,MessageBox,Tag,Tree,Select,Option} from 'element-ui'
-=======
 ,Card,Row,Col,Table,TableColumn,Switch,Tooltip,Pagination,Dialog,MessageBox,Tag,Tree,Select,Option,Cascader} from 'element-ui'
->>>>>>> cat
 
 Vue.use(Button)
 Vue.use(Form)
@@ -37,7 +33,4 @@ Vue.use(Tag)
 Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
-<<<<<<< HEAD
-=======
 Vue.use(Cascader)
->>>>>>> cat
