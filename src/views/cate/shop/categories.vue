@@ -145,7 +145,7 @@ export default {
         async getGoodList() {
             const { data: res } = await this.$http.get('categories', { params: this.goodInfo })
 
-            /* console.log(res.data.result) */
+           /*  console.log(res.data) */
             if (res.meta.status !== 200) return this.$message.error('失败获取商品列表')
             this.goodList = res.data.result
             this.total = res.data.total
@@ -212,7 +212,7 @@ export default {
         //editor 编辑
         async showEditorDialog(id) {
             const { data: res } = await this.$http.get('categories/' + id)
-            if (res.meta.status !== 200) return this.$message.err('查询商品失败！')
+            if (res.meta.status !== 200) return this.$message.error('查询商品失败！')
             /* console.log(res.data) */
             this.editorForm = res.data
             this.editorVisible = true
