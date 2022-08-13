@@ -73,7 +73,7 @@
             </span>
         </el-dialog>
         <!-- 编辑用户对话框 -->
-        <el-dialog title="用户信息更改" :visible.sync="editorVisible" width="30%" :close-on-click-modal="false"
+        <el-dialog title="商品信息更改" :visible.sync="editorVisible" width="30%" :close-on-click-modal="false"
             @close="editorVisible = false">
             <el-form :model="editorForm" :rules="addGoodRules" ref="editorFormRef" label-width="80px">
                 <el-form-item label="商品ID" prop="cat_name">
