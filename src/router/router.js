@@ -25,11 +25,11 @@ const router = new Router({
     {
       path: '/home',
       name: 'home',
-      redirect: '/welcome',
+      redirect: '/home',
       component: () => import('../views/Home.vue'),
       children: [ 
         {
-          path: '/welcome',
+          path: '/home',
           name: '主页',
           component: () => import('../views/cate/welcome.vue')
         },
@@ -60,6 +60,16 @@ const router = new Router({
           path: '/categories',
           name: '商品分类',
           component: () => import('../views/cate/shop/categories.vue')
+        },
+        {
+          path: '/order',
+          name: '订单列表',
+          component: () => import('../views/cate/order/order.vue')
+        },
+        {
+          path: '/report',
+          name: '数据报表',
+          component: () => import('../views/cate/report.vue')
         }
 
 
